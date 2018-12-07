@@ -1,0 +1,23 @@
+{
+  "name":"Hack the Fog",
+  "short_name":"Hack the Fog",
+  "description":
+    "San Francisco's first high school hackathon, inviting students to dip their toes in the biggest industry in Silicon Valley.",
+  "icons":[
+    {
+    "src": "favicon-16.png",
+    "sizes": "16x16",
+    "type": "image/png"
+    },
+    {
+    "src": "favicon-32.png",
+    "sizes": "32x32",
+    "type": "image/png"
+    },
+    {
+    "src": "favicon.ico",
+    "sizes": "48x48"
+    }
+  ],
+  "lang": "en-US"
+}

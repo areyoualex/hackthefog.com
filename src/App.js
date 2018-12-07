@@ -1,12 +1,14 @@
-import React, { Component} from "react";
+import React, {Component} from "react";
 import {hot} from "react-hot-loader";
-import "./App.css";
+import "./App.scss";
+
+import Front from "./Front"
 
 class App extends Component{
   render(){
     return(
       <div className="App">
-        <h1>Hack the Fog</h1>
+        <Front />
       </div>
     );
   }
