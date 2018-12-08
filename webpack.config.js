@@ -13,32 +13,29 @@ module.exports = {
         options: { presets: ["@babel/env"] }
       },
       {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"]
+        test: /\.(css|scss)$/,
+        use: ["style-loader", "css-loader", "sass-loader"]
       },
       {
-        test: /\.scss$/,
+        test: /\.(woff(2)?|otf|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
         use: [
-            "style-loader", // creates style nodes from JS strings
-            "css-loader", // translates CSS into CommonJS
-            "sass-loader" // compiles Sass to CSS, using Node Sass by default
-        ]
-      },
-      {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-        use: [{
+          {
             loader: 'file-loader',
             options: {
                 name: '[name].[ext]',
                 outputPath: 'fonts/'
             }
-        }]
-      }
+          }
+        ]
+      },
       {
         test: /\.(png|jpg|gif)$/,
         use: [
+          // {
+          //   loader: 'file-loader'
+          // },
           {
-            loader: 'file-loader',
+            loader: 'url-loader'
           }
         ]
       }
