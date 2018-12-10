@@ -21,7 +21,7 @@ class EmailForm extends Component {
         </label>
         <input type="text" />
         <Button type="submit">
-          I CAN'T MISS A LEGENDARY EVENT LIKE THIS
+          I'D LOVE TO HAVE FUN AND MAKE HISTORY
         </Button>
       </form>
     )

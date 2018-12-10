@@ -18,6 +18,9 @@ a:visited {
   min-height: 100vh;
   color: #f1f1f1;
   font-size: 1.2rem;
+  form.email-form {
+    margin: 2rem auto;
+  }
 }
 .social-buttons {
   margin: auto;
@@ -26,6 +29,6 @@ a:visited {
   justify-content: space-between;
   align-items: center;
   .htf-button {
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 }

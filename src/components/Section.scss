@@ -1,6 +1,7 @@
 section {
   max-width: 100%;
   box-sizing: border-box;
+  margin-bottom: 3rem;
   h3 {
     font-size: 2rem;
     font-family: "Inter UI";
@@ -11,6 +12,8 @@ section {
     width: fit-content;
     max-width: 100%;
     box-sizing: border-box;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
   .content {
     max-width: 900px;
@@ -20,5 +23,14 @@ section {
   }
 }
 section:last-of-type {
-  margin-bottom: 1.5rem;
+  margin-bottom: 4.5rem;
+}
+
+@media (max-width: 660px) {
+  section {
+    h3 {
+      width: 100%;
+      border-radius: 0;
+    }
+  }
 }
