@@ -16,4 +16,4 @@ class Section extends Component {
   }
 }
 
-export default Section;
+export default hot(module)(Section);

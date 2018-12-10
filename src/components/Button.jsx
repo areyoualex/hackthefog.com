@@ -1,8 +1,9 @@
 import React from 'react';
+import {hot} from "react-hot-loader";
 
 import "./Button.scss";
 
-export default class Button extends React.Component {
+class Button extends React.Component {
   constructor() {
     super();
     this.onClick = this.onClick.bind(this);
@@ -20,3 +21,5 @@ export default class Button extends React.Component {
     );
   }
 }
+
+export default hot(module)(Button);

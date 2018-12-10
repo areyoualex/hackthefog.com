@@ -1,9 +1,10 @@
 const path = require("path");
 const webpack = require("webpack");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
-  mode: "development",
   module: {
     rules: [
       {
@@ -31,27 +32,25 @@ module.exports = {
       {
         test: /\.(png|jpg|gif)$/,
         use: [
-          // {
-          //   loader: 'file-loader'
-          // },
           {
-            loader: 'url-loader'
+            loader: 'file-loader',
+            options: {
+              name: '[name]-[hash:8].[ext]',
+              outputPath: 'img/',
+            }
           }
         ]
-      }
+      },
     ]
   },
   resolve: { extensions: ["*", ".js", ".jsx"] },
   output: {
-    path: path.resolve(__dirname, "dist/"),
-    publicPath: "/dist/",
+    path: path.resolve(__dirname, "dist"),
+    // publicPath: "/dist",
     filename: "bundle.js"
   },
-  devServer: {
-    contentBase: path.join(__dirname, "public/"),
-    port: 3000,
-    publicPath: "http://localhost:3000/dist/",
-    hotOnly: true
-  },
-  plugins: [new webpack.HotModuleReplacementPlugin()]
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new CleanWebpackPlugin(['dist']),
+  ]
 };

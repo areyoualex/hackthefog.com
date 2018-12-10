@@ -9,7 +9,9 @@ class Front extends Component {
   render() {
     return (
       <div className="front">
-        <h1>Hack the Fog</h1>
+        <a href="#">
+          <h1>Hack the Fog</h1>
+        </a>
         <img src={logo}></img>
         <h2>where coding is your superpower.</h2>
         <div>
@@ -21,4 +23,4 @@ class Front extends Component {
   }
 }
 
-export default Front;
+export default hot(module)(Front);

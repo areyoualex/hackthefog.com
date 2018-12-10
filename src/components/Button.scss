@@ -1,3 +1,18 @@
 .htf-button {
   width: fit-content;
+  margin: auto;
+  font-size: 1.4rem;
+  padding: 10px 25px;
+  background-color: #e46333;
+  border: none;
+  border-radius: 10px;
+  filter: drop-shadow(1px 1px 2px #202020aa);
+  font-family: "Inter UI";
+  color: white;
+  * {
+    margin-right: 10px;
+  }
+  *:last-child {
+    margin-right: 0;
+  }
 }

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {hot} from "react-hot-loader";
 
 import "./Footer.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -42,4 +43,4 @@ class IconLink extends Component {
   }
 }
 
-export default Footer;
+export default hot(module)(Footer);

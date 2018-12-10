@@ -14,9 +14,13 @@
   position: relative;
   border-bottom: 1px solid #3b3b3b;
   h1 {
-    top: 1rem;
-    left: 2rem;
+    padding: 1rem 2rem;
     position: absolute;
+    top: 0;
+    left: 0rem;
+    color: #1a2233;
+    background-color: #a2a2a266;
+    border-bottom-right-radius: 25px;
   }
   h2 {
     width: 100%;

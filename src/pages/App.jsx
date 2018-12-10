@@ -12,6 +12,7 @@ import Front from "../components/Front";
 import Section from "../components/Section";
 import EmailForm from "../components/EmailForm";
 import Footer from "../components/Footer";
+import Button from "../components/Button";
 
 class App extends Component{
   constructor() {
@@ -37,6 +38,18 @@ class App extends Component{
             Don't check your emails? Follow us on social media!
           </p>
           <div className="social-buttons">
+            <Button href="https://www.instagram.com/hackthefog/">
+              <FontAwesomeIcon icon={['fab','instagram']} />
+              <span>INSTAGRAM</span>
+            </Button>
+            <Button href="https://www.twitter.com/hackthefog/">
+              <FontAwesomeIcon icon={['fab','twitter']} />
+              <span>TWITTER</span>
+            </Button>
+            <Button href="https://www.facebook.com/hackthefog/">
+              <FontAwesomeIcon icon={['fab','facebook']} />
+              <span>FACEBOOK</span>
+            </Button>
           </div>
         </Section>
         <Section title="Past Sponsors">
