@@ -1,4 +1,6 @@
 section {
+  max-width: 100%;
+  box-sizing: border-box;
   h3 {
     font-size: 2rem;
     font-family: "Inter UI";
@@ -7,6 +9,8 @@ section {
     background-color: #c8e8f5;
     color: #080b0e;
     width: fit-content;
+    max-width: 100%;
+    box-sizing: border-box;
   }
   .content {
     max-width: 900px;
@@ -14,4 +18,7 @@ section {
     box-sizing: border-box;
     margin: auto;
   }
+}
+section:last-of-type {
+  margin-bottom: 1.5rem;
 }

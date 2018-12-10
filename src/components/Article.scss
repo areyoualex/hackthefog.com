@@ -44,3 +44,23 @@ a {
     text-decoration: underline;
   }
 }
+@media (max-width: 540px) {
+  .article {
+    width: 100%;
+    div {
+      p {
+        font-size: 7vw;
+      }
+      * {
+        display: block;
+      }
+      span {
+        margin: 1vw 0;
+      }
+    }
+    span {
+      font-size: 4vw;
+      line-height: 4vw;
+    }
+  }
+}

@@ -62,8 +62,10 @@ class App extends Component{
             </Button>
           </div>
         </Section>
-        <Section title="Past Sponsors">
-        </Section>
+        {/**
+          <Section title="Past Sponsors">
+          </Section>
+        */}
         <Footer updateReceiver={this.updateFooterHeight} />
       </div>
     );
