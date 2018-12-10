@@ -13,6 +13,9 @@ import Section from "../components/Section";
 import EmailForm from "../components/EmailForm";
 import Footer from "../components/Footer";
 import Button from "../components/Button";
+import Article from "../components/Article";
+
+import sfchronicle from "../img/sfchronicle.jpg";
 
 class App extends Component{
   constructor() {
@@ -28,6 +31,13 @@ class App extends Component{
       <div className="App" style={{paddingBottom:this.state.footerHeight}}>
         <Front />
         <Section title="Hack the Fog in the Press">
+          <Article
+            href="https://www.sfchronicle.com/bayarea/article/Hack-the-Fog-makes-history-as-San-12729895.php"
+            title="'Hack the Fog' makes history as San Francisco’s first high school hackathon"
+            date="March 5, 2018"
+            shortlink="sfchronicle.com"
+            imgSrc={sfchronicle}
+            />
         </Section>
         <Section title="Stay updated.">
           <p>

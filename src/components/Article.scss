@@ -1,0 +1,46 @@
+a {
+  text-decoration: none;
+}
+.article {
+  width: 80%;
+  margin: auto;
+  background-color: #c1d9e4;
+  color: #404040;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  filter: drop-shadow(1px 1px 4px #000000);
+  div {
+    box-sizing: border-box;
+    padding: 1rem 1rem 0.5rem;
+    width: 100%;
+    p {
+      font-size: 2rem;
+      font-weight: bold;
+      width: 100%;
+      font-family: 'Noto Serif SC';
+    }
+    span {
+      padding: 0;
+      width: 100%;
+      font-style: italic;
+      background: none;
+      color: #585858;
+    }
+  }
+  img {
+    width: 100%;
+  }
+  span {
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    color: #c8c8c8;
+    background-color: #4e4e4e;
+    font-family: 'Inter UI';
+    padding: 0.6rem 1rem;
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    text-decoration: underline;
+  }
+}

@@ -5,8 +5,20 @@ import "./Article.scss";
 
 class Article extends React.Component {
   render() {
-    <div>
-    </div>
+    return (
+      <a href={this.props.href}>
+        <div className="article">
+          <div>
+            <p>{this.props.title}</p>
+            <span>{this.props.date}</span>
+          </div>
+          <img src={this.props.imgSrc} />
+          <span>
+            {this.props.shortlink}
+          </span>
+        </div>
+      </a>
+    );
   }
 }
 
