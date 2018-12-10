@@ -1,4 +1,5 @@
 footer {
+  height: 8rem;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -7,8 +8,8 @@ footer {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
+  justify-content: space-around;
+  align-items: center;
   .social-icons {
     .icon-link {
       font-size: 1.5rem;
@@ -18,5 +19,15 @@ footer {
     .icon-link:first-child {
       margin-left: 0;
     }
+  }
+}
+footer > a {
+  align-self: flex-end;
+}
+@media (max-width: 540px) {
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 10rem;
   }
 }

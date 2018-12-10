@@ -10,7 +10,8 @@ class Button extends React.Component {
   }
   onClick() {
     if (this.props.href) window.location.href = this.props.href;
-    this.props.onClick();
+    if (this.props.onClick)
+      this.props.onClick();
   }
   render() {
     let type = this.props.type || "button";
