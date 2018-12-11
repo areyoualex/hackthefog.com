@@ -17,12 +17,11 @@ npm install
 ```
 3. Use the develop server script to get started on localhost:3000:
 ```
-npm run develop
+npm run dev
 ```
 
 ### Testing the production build
 If you want to locally host a production build of this website, just run the following commands:
 ```
 npm run build
-npm run serve
 ```

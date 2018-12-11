@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+SC'); /* TODO: download font files locally */
+
+@font-face {
+  font-family: 'Fakt Soft Pro';
+  src: url('/fonts/FaktSoftPro-Normal.ttf');
+} /* TODO: include other versions of this font */
+
+@font-face {
+  font-family: 'Inter UI';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/inter-ui/Inter-UI-Regular.woff2') format('woff2'),
+    url('/fonts/inter-ui/Inter-UI-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter UI';
+  font-style: regular;
+  font-weight: 500;
+  src: url('/fonts/inter-ui/Inter-UI-Medium.woff2') format('woff2'),
+    url('/fonts/inter-ui/Inter-UI-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter UI';
+  font-style: regular;
+  font-weight: bold;
+  src: url('/fonts/inter-ui/Inter-UI-Black.woff2') format('woff2'),
+    url('/fonts/inter-ui/Inter-UI-Black.woff') format('woff');
+}

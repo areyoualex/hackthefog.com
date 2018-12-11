@@ -1,0 +1,12 @@
+{
+  "name": "Hack the Fog",
+  "description": "San Francisco’s All-Inclusive High School Hackathon",
+  "url": "https://hackthefog.com",
+  "img": "https://hackthefog.com/card.png",
+  "socials": [
+    { "service": "twitter", "url": "https://twitter.com/hackthefog" },
+    { "service": "instagram", "url": "https://instagram.com/hackthefog" },
+    { "service": "github", "url": "https://github.com/hackthefog" },
+    { "service": "email-fill", "url": "mailto:contact@hackthefog.com" }
+  ]
+}
