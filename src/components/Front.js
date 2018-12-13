@@ -1,12 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import logo from '../img/brand/logo.png';
+import collage from '../img/htf-1/front-collage.png';
+
 const Base = styled.div`
   min-height: fit-content;
   height: 35rem;
   width: 100%;
   background-color: #2e6b99;
-  background: url('/img/htf-1/front-collage.png');
+  background: url(${collage});
   background-size: auto 100%;
   display: flex;
   align-items: center;
@@ -71,7 +74,7 @@ const MoreInfo = styled.div`
 const Front = () => (
   <Base>
     <Title>Hack the Fog</Title>
-    <Image src={require('../../static/img/brand/logo.png')} />
+    <Image src={logo} />
     <Tagline>where coding is your superpower.</Tagline>
     <MoreInfo>
       <p>MARCH 2019</p>

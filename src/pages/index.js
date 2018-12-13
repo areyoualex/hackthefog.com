@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Icon from '@hackclub/icons'
+import sfchronicleimg from '../img/htf-1/sf-chronicle.jpg'
 
 import Layout from '../components/Layout'
 import Front from '../components/Front'
@@ -24,7 +25,7 @@ const SocialButtonSpan = styled.span`
   margin-left: 1rem;
 `
 
-/* imgSrc={sfchronicleimg} */
+/*  */
 export default () => (
   <Layout>
     <Front />
@@ -33,8 +34,9 @@ export default () => (
         href="https://www.sfchronicle.com/bayarea/article/Hack-the-Fog-makes-history-as-San-12729895.php"
         title="'Hack the Fog' makes history as San Francisco’s first high school hackathon"
         date="March 5, 2018"
+        alt="Hack the Fog SF Chronicle article"
         shortlink="sfchronicle.com"
-        imgSrc={require('../../static/img/htf-1/sf-chronicle.jpg')}
+        imgSrc={sfchronicleimg}
       />
     </Section>
     <Section title="Stay updated.">

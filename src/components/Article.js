@@ -64,7 +64,7 @@ const Shortlink = styled.span`
   }
 `
 
-const Article = ({ href, title, date, imgSrc, shortlink }) => (
+const Article = ({ alt, href, title, date, imgSrc, shortlink }) => (
   <Link href={href}>
     <Base>
       <Main>
@@ -74,7 +74,7 @@ const Article = ({ href, title, date, imgSrc, shortlink }) => (
       <img
         src={imgSrc}
         style={{ width: '100%' }}
-        alt="Hack the Fog SF Chronicle article"
+        alt={alt}
       />
       <Shortlink>{shortlink}</Shortlink>
     </Base>
