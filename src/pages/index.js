@@ -12,7 +12,7 @@ import Button from '../components/Button'
 import Article from '../components/Article'
 
 const SocialButtons = styled.div`
-  margin: auto;
+  margin: 2rem auto 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -25,7 +25,6 @@ const SocialButtonSpan = styled.span`
   margin-left: 1rem;
 `
 
-/*  */
 export default () => (
   <Layout>
     <Front />
