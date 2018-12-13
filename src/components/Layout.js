@@ -13,6 +13,10 @@ const meta = tags =>
 const Wrapper = styled.div`
   display: flex;
   flex-flow: column;
+  padding-bottom: 8rem;
+  @media (max-width: 540px) {
+    padding-bottom: 10rem;
+  }
 `
 
 export default ({ children }) => {

@@ -20,7 +20,11 @@ const SocialButtons = styled.div`
 const SocialButton = styled(Button)`
   margin-top: 2rem;
 `
+const SocialButtonSpan = styled.span`
+  margin-left: 1rem;
+`
 
+/* imgSrc={sfchronicleimg} */
 export default () => (
   <Layout>
     <Front />
@@ -43,15 +47,15 @@ export default () => (
       <SocialButtons>
         <SocialButton href="https://www.instagram.com/hackthefog/">
           <Icon glyph="instagram" size={36} />
-          <span>INSTAGRAM</span>
+          <SocialButtonSpan>INSTAGRAM</SocialButtonSpan>
         </SocialButton>
         <SocialButton href="https://www.twitter.com/hackthefog/">
           <Icon glyph="twitter" size={36} />
-          <span>TWITTER</span>
+          <SocialButtonSpan>TWITTER</SocialButtonSpan>
         </SocialButton>
         <SocialButton href="https://www.facebook.com/hackthefog/">
           <Icon glyph="facebook" size={36} />
-          <span>FACEBOOK</span>
+          <SocialButtonSpan>FACEBOOK</SocialButtonSpan>
         </SocialButton>
       </SocialButtons>
     </Section>

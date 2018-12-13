@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledButton = styled.button`
+  display: flex;
+  align-items: center;
   width: fit-content;
   margin: auto;
   font-size: 1.4rem;
@@ -12,7 +14,6 @@ const StyledButton = styled.button`
   filter: drop-shadow(1px 1px 2px #202020aa);
   font-family: 'Inter UI';
   color: white;
-  margin-right: 10px;
 `
 
 class Button extends React.Component {
